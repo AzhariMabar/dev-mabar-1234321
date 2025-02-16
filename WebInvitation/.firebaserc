@@ -1,0 +1,19 @@
+{
+  "projects": {
+    "default": "invitation-5ec2c",
+    "public": "invitation-5ec2c"
+  },
+  "targets": {
+    "invitation-5ec2c": {
+      "hosting": {
+        "invitation-5ec2c": [
+          "invitation-5ec2c.web.app"
+        ],
+        "meet-invitation": [
+          "https://meet-invitation.web.app"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

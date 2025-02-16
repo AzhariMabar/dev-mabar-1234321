@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "target":"meet-invitation",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
