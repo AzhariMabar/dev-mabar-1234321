@@ -623,6 +623,7 @@ const kirim = async () => {
 window.addEventListener('load', () => {
     let name = (new URLSearchParams(window.location.search)).get('to') ?? '';
     document.getElementById('formnama').value = name;
+    document.getElementById('namatamu').innerHTML = name ? 'Kepada Bpk/Ibu/Sdr<br>'+name : '';
 
 }, false);
 
