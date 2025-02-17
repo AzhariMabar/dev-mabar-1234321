@@ -383,6 +383,19 @@
 			padding: 20px 40px;
 			font-family: sans-serif;
 		}
+
+		#tombol-musik {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			z-index: 10000;
+			width: 30px;
+			height: 30px;
+			background-color: WHITE;
+			border: white;
+			border-radius: 50%;
+			padding: 3px;
+		}
 	</style>
 </head>
 <body>
@@ -424,7 +437,7 @@
 		<p>frigia cab. garut</p>
 		<img src="Image/main.png" style="margin: 20px 0" alt="">
 		<div class="line"></div>
-		<p style="margin: 20px 0; font-size: 14pt;">kamis<br>27 februari 2025<br>11 pagi - 13 siang</p>
+		<p style="margin: 20px 0; font-size: 14pt;">kamis<br>27 februari 2025<br>11:00 - 13:00 </p>
 		<div class="line"></div>
 		<p style="margin: 20px 0; font-size: 14pt;">jl. pembangunan no.250<br>garut</p>
 		<a href="https://maps.app.goo.gl/7y97Fgsn1i3k6V5o9" target="_blank">
@@ -533,6 +546,10 @@
 	    <p>Loading...</p>
 	</div>
 
+	<button type="button" id="tombol-musik" style="display: none;" class="btn btn-outline-dark btn-sm rounded-circle btn-music" onclick="play(this)" data-status="true" data-url="music.mp3">
+        <i class="fa-solid fa-circle-pause"></i>
+    </button>
+
 	<script>
 		// Detect when everything (images, fonts, etc.) is fully loaded
 		window.addEventListener('load', function() {
@@ -576,6 +593,8 @@
 		            item.style.opacity = 1;
 		            item.style.transition = 'opacity 0.5s ease-out';
 		        });
+
+		        buka();
 
 		        // Scroll to the bottom after transition starts
 		        window.scrollTo(0, document.body.scrollHeight);

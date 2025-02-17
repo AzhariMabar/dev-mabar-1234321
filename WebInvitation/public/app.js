@@ -75,7 +75,6 @@ const buka = async () => {
     document.getElementById('tombol-musik').style.display = 'block';
     audio.play();
     AOS.init();
-    timer();
     scrollToTop();
 };
 
