@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "target":"meet-invitation",
+    "site":"meet-invitation",
     "public": "public",
     "ignore": [
       "firebase.json",
